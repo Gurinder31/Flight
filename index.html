@@ -1,0 +1,1889 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Test</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--  CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="main-header-wrapper">
+        <div class="container-lg">
+            <nav class="navbar navbar-expand-lg navbar-light p-4">
+                <a class="navbar-brand" href="#"><img class="img-fluid" src="assets/images/footer-logo.png" alt="logo" width="110"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav cust-nav-wrap ">
+                        <li class="nav-item active">
+                            <a class="nav-link cust-nav-links" href="#">Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cust-nav-links d-inline-flex align-items-center" href="#"><span
+                                    class="globe-icon d-inline-block mr-2"></span>Language</a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <button type="button" class="country-btn bg-transparent d-inline-flex justify-content-center align-items-center p-1 px-2 mx-3"><span
+                                    class="flag-icon mr-2"></span>India<span class="currency pl-2 ml-2">&#8377;
+                                    INR</span></button>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <span class="d-inline-block notification-bell "></span>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <button type="button" class="login-signup bg-transparent p-2 px-4">Login/SignUp</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- banner section -->
+    <div class="banner-section position-relative">
+        <div class="banner-wrap position-relative">
+            <img src="assets/images/banner.png" alt="banner" class="img-fluid">
+            <div class="banner-text position-absolute">
+                <h1 class="banner-title">Air, sleep, dream</h1>
+                <p class="banner-subtxt">Find and book a great experience.</p>
+                <button type="button" class="btn banner-btn text-light p-2 px-3 mt-0 mt-lg-4">Start your search</button>
+            </div>
+        </div>
+
+        <div class="flight-tabs-wrap  w-100 p-1 p-lg-4 pb-0">
+            <ul class="nav nav-pills  flight-tabs px-3 border-bottom" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link cust-flight-tabs pb-4" id="stays-tab" data-toggle="pill" href="#stays" role="tab" aria-controls="stays" aria-selected="true">Stays</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link cust-flight-tabs active pb-4" id="flights-tab" data-toggle="pill" href="#flights" role="tab" aria-controls="flights" aria-selected="false">Flights</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link cust-flight-tabs pb-4" id="cars-tab" data-toggle="pill" href="#cars" role="tab" aria-controls="cars" aria-selected="false">Cars</a>
+                </li>
+                <li class="nav-item" role="presentation ">
+                    <a class="nav-link cust-flight-tabs pb-4" id="experience-tab" data-toggle="pill" href="#experience" role="tab" aria-controls="experience" aria-selected="false">Experience</a>
+                </li>
+            </ul>
+
+
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade " id="stays" role="tabpanel" aria-labelledby="stays-tab">
+                    <div class="flight-data-main d-flex  justify-content-between align-items-center">
+                        <ul class="nav nav-pills px-3 flight-data pt-4" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link  cust-flight-tabs active" id="pills-home-tab" data-toggle="pill" href="#roundTrip" role="tab" aria-controls="pills-home" aria-selected="true">Round Trip</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link cust-flight-tabs" id="pills-profile-tab" data-toggle="pill" href="#oneWay" role="tab" aria-controls="pills-profile" aria-selected="false">One Way</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link cust-flight-tabs" id="pills-contact-tab" data-toggle="pill" href="#multiCity" role="tab" aria-controls="pills-contact" aria-selected="false">MultiCity</a>
+                            </li>
+                        </ul>
+                        <div class="flight-adult-wrap d-none d-lg-flex">
+                            <div class="custom-dropdown position-relative mr-2">
+                                <div class="selected">
+                                    <span class="dropdown-cnt dropdown-arrow d-inline-flex p-2 px-3">1
+                                        adult</span>
+                                </div>
+                                <div class="drop-content position-relative">
+                                    <ul class="position-absolute w-100 drop-content-wrap">
+                                        <li class="dropdown-item"><span class="dropdown-cnt d-inline-flex">2
+                                                adult</span></li>
+                                        <li class="dropdown-item"><span class="dropdown-cnt d-inline-flex">3
+                                                adult</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="custom-dropdown1 position-relative">
+                                <div class="selected">
+                                    <span class="dropdown-cnt dropdown-arrow d-inline-flex p-2 px-2 ml-2">Class</span>
+                                </div>
+                                <div class="drop-content position-relative">
+                                    <ul class="position-absolute w-100 drop-content-wrap">
+                                        <li class="dropdown-item"><span class="dropdown-cnt d-inline-flex">Business</span></li>
+                                        <li class="dropdown-item"><span class="dropdown-cnt d-inline-flex">Economy</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane  show active " id="roundTrip" role="tabpanel" aria-labelledby="roundTrip">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 ">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-wrap">
+                                                    <div class="flight-item-wrap d-flex p-3">
+                                                        <span class="location d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                        <div class="flight-txt">
+                                                            <h5 class="flight-from m-0">Flying from</h5>
+                                                            <p class="leaving-from m-0">Leaving from</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Nearby-Airports">Direct Flights Only
+                                                    <input type="checkbox" checked="checked"
+                                                        id="Nearby-Airports" class="nearby-airport-inpt">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6 ">
+                                                <div class="flight-item-wrap d-flex p-3">
+                                                    <span class="send d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Flying to</h5>
+                                                        <p class="leaving-from m-0">Going to</p>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Direct-Flights">Direct Flights Only
+                                                    <input type="checkbox" checked="checked" id="Direct-Flights"
+                                                        class="nearby-airport-inpt">
+                                                    <span class="checkmark"></span>
+                                                </label>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-1 p-md-3 pt-3 pt-sm-0">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Departure</h5>
+                                                        <p class="leaving-from m-0">Departure</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-3 justify-content-md-between">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Return</h5>
+                                                        <p class="leaving-from m-0">Return</p>
+                                                    </div>
+                                                    <div class="search d-flex justify-content-center align-items-center ml-auto">
+                                                        <img src="assets/images/search.svg" alt="search" class="img-fluid search-icn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="oneWay" role="tabpanel" aria-labelledby="oneWay">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 ">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-wrap">
+                                                    <div class="flight-item-wrap d-flex p-3">
+                                                        <span class="location d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                        <div class="flight-txt">
+                                                            <h5 class="flight-from m-0">Flying from</h5>
+                                                            <p class="leaving-from m-0">Leaving from</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Nearby-Airports1">Direct Flights Only
+                                                    <input type="checkbox" checked="checked"
+                                                        id="Nearby-Airports1" class="nearby-airport-inpt">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6 ">
+                                                <div class="flight-item-wrap d-flex p-3">
+                                                    <span class="send d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Flying to</h5>
+                                                        <p class="leaving-from m-0">Going to</p>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Direct-Flights2">Direct Flights Only
+                                                    <input type="checkbox" checked="checked" id="Direct-Flights2"
+                                                        class="nearby-airport-inpt">
+                                                    <span class="checkmark"></span>
+                                                </label>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-1 p-md-3 pt-3 pt-sm-0">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Departure</h5>
+                                                        <p class="leaving-from m-0">Departure</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-3 justify-content-md-between">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Return</h5>
+                                                        <p class="leaving-from m-0">Return</p>
+                                                    </div>
+                                                    <div class="search d-flex justify-content-center align-items-center ml-auto">
+                                                        <img src="assets/images/search.svg" alt="search" class="img-fluid search-icn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="multiCity" role="tabpanel" aria-labelledby="multiCity">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 ">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-wrap">
+                                                    <div class="flight-item-wrap d-flex p-3">
+                                                        <span class="location d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                        <div class="flight-txt">
+                                                            <h5 class="flight-from m-0">Flying from</h5>
+                                                            <p class="leaving-from m-0">Leaving from</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Nearby-Airports3">Direct Flights Only
+                                                    <input type="checkbox" checked="checked"
+                                                        id="Nearby-Airports3" class="nearby-airport-inpt">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6 ">
+                                                <div class="flight-item-wrap d-flex p-3">
+                                                    <span class="send d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Flying to</h5>
+                                                        <p class="leaving-from m-0">Going to</p>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Direct-Flights3">Direct Flights Only
+                                                    <input type="checkbox" checked="checked" id="Direct-Flights3"
+                                                        class="nearby-airport-inpt">
+                                                    <span class="checkmark"></span>
+                                                </label>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-1 p-md-3 pt-3 pt-sm-0">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Departure</h5>
+                                                        <p class="leaving-from m-0">Departure</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-3 justify-content-md-between">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Return</h5>
+                                                        <p class="leaving-from m-0">Return</p>
+                                                    </div>
+                                                    <div class="search d-flex justify-content-center align-items-center ml-auto">
+                                                        <img src="assets/images/search.svg" alt="search" class="img-fluid search-icn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show active" id="flights" role="tabpanel" aria-labelledby="flights-tab">
+                    <div class="flight-data-main d-flex  justify-content-between align-items-center">
+                        <ul class="nav nav-pills px-3 flight-data pt-4" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link  cust-flight-tabs active" id="pills-home-tab" data-toggle="pill" href="#roundTrip1" role="tab" aria-controls="pills-home" aria-selected="true">Round Trip</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link cust-flight-tabs" id="pills-profile-tab" data-toggle="pill" href="#oneWay1" role="tab" aria-controls="pills-profile" aria-selected="false">One Way</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link cust-flight-tabs" id="pills-contact-tab" data-toggle="pill" href="#multiCity1" role="tab" aria-controls="pills-contact" aria-selected="false">MultiCity</a>
+                            </li>
+                        </ul>
+                        <div class="flight-adult-wrap d-none d-lg-flex">
+                            <div class="custom-dropdown position-relative mr-2">
+                                <div class="selected">
+                                    <span class="dropdown-cnt dropdown-arrow d-inline-flex p-2 px-3">1
+                                        adult</span>
+                                </div>
+                                <div class="drop-content position-relative">
+                                    <ul class="position-absolute w-100 drop-content-wrap">
+                                        <li class="dropdown-item"><span class="dropdown-cnt d-inline-flex">2
+                                                adult</span></li>
+                                        <li class="dropdown-item"><span class="dropdown-cnt d-inline-flex">3
+                                                adult</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="custom-dropdown1 position-relative">
+                                <div class="selected">
+                                    <span class="dropdown-cnt dropdown-arrow d-inline-flex p-2 px-2 ml-2">Class</span>
+                                </div>
+                                <div class="drop-content position-relative">
+                                    <ul class="position-absolute w-100 drop-content-wrap">
+                                        <li class="dropdown-item"><span class="dropdown-cnt d-inline-flex">Business</span></li>
+                                        <li class="dropdown-item"><span class="dropdown-cnt d-inline-flex">Economy</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane  show active " id="roundTrip1" role="tabpanel" aria-labelledby="roundTrip1">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 ">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-wrap">
+                                                    <div class="flight-item-wrap d-flex p-3">
+                                                        <span class="location d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                        <div class="flight-txt">
+                                                            <h5 class="flight-from m-0">Flying from</h5>
+                                                            <p class="leaving-from m-0">Leaving from</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Nearby-Airports4">Direct Flights Only
+                                                    <input type="checkbox" checked="checked"
+                                                        id="Nearby-Airports4" class="nearby-airport-inpt">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6 ">
+                                                <div class="flight-item-wrap d-flex p-3">
+                                                    <span class="send d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Flying to</h5>
+                                                        <p class="leaving-from m-0">Going to</p>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Direct-Flights4">Direct Flights Only
+                                                    <input type="checkbox" checked="checked" id="Direct-Flights4"
+                                                        class="nearby-airport-inpt">
+                                                    <span class="checkmark"></span>
+                                                </label>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-1 p-md-3 pt-3 pt-sm-0">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Departure</h5>
+                                                        <p class="leaving-from m-0">Departure</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-3 justify-content-md-between">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Return</h5>
+                                                        <p class="leaving-from m-0">Return</p>
+                                                    </div>
+                                                    <div class="search d-flex justify-content-center align-items-center ml-auto">
+                                                        <img src="assets/images/search.svg" alt="search" class="img-fluid search-icn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="oneWay1" role="tabpanel" aria-labelledby="oneWay1">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 ">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-wrap">
+                                                    <div class="flight-item-wrap d-flex p-3">
+                                                        <span class="location d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                        <div class="flight-txt">
+                                                            <h5 class="flight-from m-0">Flying from</h5>
+                                                            <p class="leaving-from m-0">Leaving from</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Nearby-Airports5">Direct Flights Only
+                                                <input type="checkbox" checked="checked"
+                                                    id="Nearby-Airports5" class="nearby-airport-inpt">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            </div>
+                                            <div class="col-md-6 ">
+                                                <div class="flight-item-wrap d-flex p-3">
+                                                    <span class="send d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Flying to</h5>
+                                                        <p class="leaving-from m-0">Going to</p>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Direct-Flights5">Direct Flights Only
+                                                <input type="checkbox" checked="checked" id="Direct-Flights5"
+                                                    class="nearby-airport-inpt">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-1 p-md-3 pt-3 pt-sm-0">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Departure</h5>
+                                                        <p class="leaving-from m-0">Departure</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-3 justify-content-md-between">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Return</h5>
+                                                        <p class="leaving-from m-0">Return</p>
+                                                    </div>
+                                                    <div class="search d-flex justify-content-center align-items-center ml-auto">
+                                                        <img src="assets/images/search.svg" alt="search" class="img-fluid search-icn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="multiCity1" role="tabpanel" aria-labelledby="multiCity1">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 ">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-wrap">
+                                                    <div class="flight-item-wrap d-flex p-3">
+                                                        <span class="location d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                        <div class="flight-txt">
+                                                            <h5 class="flight-from m-0">Flying from</h5>
+                                                            <p class="leaving-from m-0">Leaving from</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Nearby-Airports6">Direct Flights Only
+                                                    <input type="checkbox" checked="checked"
+                                                        id="Nearby-Airports6" class="nearby-airport-inpt">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6 ">
+                                                <div class="flight-item-wrap d-flex p-3">
+                                                    <span class="send d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Flying to</h5>
+                                                        <p class="leaving-from m-0">Going to</p>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Direct-Flights6">Direct Flights Only
+                                                    <input type="checkbox" checked="checked" id="Direct-Flights6"
+                                                        class="nearby-airport-inpt">
+                                                    <span class="checkmark"></span>
+                                                </label>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-1 p-md-3 pt-3 pt-sm-0">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Departure</h5>
+                                                        <p class="leaving-from m-0">Departure</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-3 justify-content-md-between">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Return</h5>
+                                                        <p class="leaving-from m-0">Return</p>
+                                                    </div>
+                                                    <div class="search d-flex justify-content-center align-items-center ml-auto">
+                                                        <img src="assets/images/search.svg" alt="search" class="img-fluid search-icn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="cars" role="tabpanel" aria-labelledby="cars-tab">
+                    <div class="flight-data-main d-flex  justify-content-between align-items-center">
+                        <ul class="nav nav-pills px-3 flight-data pt-4" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link  cust-flight-tabs active" id="pills-home-tab" data-toggle="pill" href="#roundTrip2" role="tab" aria-controls="pills-home" aria-selected="true">Round Trip</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link cust-flight-tabs" id="pills-profile-tab" data-toggle="pill" href="#oneWay2" role="tab" aria-controls="pills-profile" aria-selected="false">One Way</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link cust-flight-tabs" id="pills-contact-tab" data-toggle="pill" href="#multiCity2" role="tab" aria-controls="pills-contact" aria-selected="false">MultiCity</a>
+                            </li>
+                        </ul>
+                        <div class="flight-adult-wrap d-none d-lg-flex">
+                            <div class="custom-dropdown position-relative mr-2">
+                                <div class="selected">
+                                    <span class="dropdown-cnt dropdown-arrow d-inline-flex p-2 px-3">1
+                                        adult</span>
+                                </div>
+                                <div class="drop-content position-relative">
+                                    <ul class="position-absolute w-100 drop-content-wrap">
+                                        <li class="dropdown-item"><span class="dropdown-cnt d-inline-flex">2
+                                                adult</span></li>
+                                        <li class="dropdown-item"><span class="dropdown-cnt d-inline-flex">3
+                                                adult</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="custom-dropdown1 position-relative">
+                                <div class="selected">
+                                    <span class="dropdown-cnt dropdown-arrow d-inline-flex p-2 px-2 ml-2">Class</span>
+                                </div>
+                                <div class="drop-content position-relative">
+                                    <ul class="position-absolute w-100 drop-content-wrap">
+                                        <li class="dropdown-item"><span class="dropdown-cnt d-inline-flex">Business</span></li>
+                                        <li class="dropdown-item"><span class="dropdown-cnt d-inline-flex">Economy</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane  show active " id="roundTrip2" role="tabpanel" aria-labelledby="roundTrip2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 ">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-wrap">
+                                                    <div class="flight-item-wrap d-flex p-3">
+                                                        <span class="location d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                        <div class="flight-txt">
+                                                            <h5 class="flight-from m-0">Flying from</h5>
+                                                            <p class="leaving-from m-0">Leaving from</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Nearby-Airports7">Direct Flights Only
+                                                    <input type="checkbox" checked="checked"
+                                                        id="Nearby-Airports7" class="nearby-airport-inpt">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6 ">
+                                                <div class="flight-item-wrap d-flex p-3">
+                                                    <span class="send d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Flying to</h5>
+                                                        <p class="leaving-from m-0">Going to</p>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Direct-Flights7">Direct Flights Only
+                                                    <input type="checkbox" checked="checked" id="Direct-Flights7"
+                                                        class="nearby-airport-inpt">
+                                                    <span class="checkmark"></span>
+                                                </label>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-1 p-md-3 pt-3 pt-sm-0">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Departure</h5>
+                                                        <p class="leaving-from m-0">Departure</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-3 justify-content-md-between">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Return</h5>
+                                                        <p class="leaving-from m-0">Return</p>
+                                                    </div>
+                                                    <div class="search d-flex justify-content-center align-items-center ml-auto">
+                                                        <img src="assets/images/search.svg" alt="search" class="img-fluid search-icn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="oneWay2" role="tabpanel" aria-labelledby="oneWay2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 ">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-wrap">
+                                                    <div class="flight-item-wrap d-flex p-3">
+                                                        <span class="location d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                        <div class="flight-txt">
+                                                            <h5 class="flight-from m-0">Flying from</h5>
+                                                            <p class="leaving-from m-0">Leaving from</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Nearby-Airports8">Direct Flights Only
+                                                <input type="checkbox" checked="checked"
+                                                    id="Nearby-Airports8" class="nearby-airport-inpt">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            </div>
+                                            <div class="col-md-6 ">
+                                                <div class="flight-item-wrap d-flex p-3">
+                                                    <span class="send d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Flying to</h5>
+                                                        <p class="leaving-from m-0">Going to</p>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Direct-Flights8">Direct Flights Only
+                                                <input type="checkbox" checked="checked" id="Direct-Flights8"
+                                                    class="nearby-airport-inpt">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-1 p-md-3 pt-3 pt-sm-0">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Departure</h5>
+                                                        <p class="leaving-from m-0">Departure</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-3 justify-content-md-between">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Return</h5>
+                                                        <p class="leaving-from m-0">Return</p>
+                                                    </div>
+                                                    <div class="search d-flex justify-content-center align-items-center ml-auto">
+                                                        <img src="assets/images/search.svg" alt="search" class="img-fluid search-icn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="multiCity2" role="tabpanel" aria-labelledby="multiCity2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 ">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-wrap">
+                                                    <div class="flight-item-wrap d-flex p-3">
+                                                        <span class="location d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                        <div class="flight-txt">
+                                                            <h5 class="flight-from m-0">Flying from</h5>
+                                                            <p class="leaving-from m-0">Leaving from</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Nearby-Airports9">Direct Flights Only
+                                                    <input type="checkbox" checked="checked"
+                                                        id="Nearby-Airports9" class="nearby-airport-inpt">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6 ">
+                                                <div class="flight-item-wrap d-flex p-3">
+                                                    <span class="send d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Flying to</h5>
+                                                        <p class="leaving-from m-0">Going to</p>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Direct-Flights9">Direct Flights Only
+                                                    <input type="checkbox" checked="checked" id="Direct-Flights9"
+                                                        class="nearby-airport-inpt">
+                                                    <span class="checkmark"></span>
+                                                </label>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-1 p-md-3 pt-3 pt-sm-0">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Departure</h5>
+                                                        <p class="leaving-from m-0">Departure</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-3 justify-content-md-between">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Return</h5>
+                                                        <p class="leaving-from m-0">Return</p>
+                                                    </div>
+                                                    <div class="search d-flex justify-content-center align-items-center ml-auto">
+                                                        <img src="assets/images/search.svg" alt="search" class="img-fluid search-icn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+                    <div class="flight-data-main d-flex  justify-content-between align-items-center">
+                        <ul class="nav nav-pills px-3 flight-data pt-4" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link  cust-flight-tabs active" id="pills-home-tab" data-toggle="pill" href="#roundTrip3" role="tab" aria-controls="pills-home" aria-selected="true">Round Trip</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link cust-flight-tabs" id="pills-profile-tab" data-toggle="pill" href="#oneWay3" role="tab" aria-controls="pills-profile" aria-selected="false">One Way</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link cust-flight-tabs" id="pills-contact-tab" data-toggle="pill" href="#multiCity3" role="tab" aria-controls="pills-contact" aria-selected="false">MultiCity</a>
+                            </li>
+                        </ul>
+                        <div class="flight-adult-wrap d-none d-lg-flex">
+                            <div class="custom-dropdown position-relative mr-2">
+                                <div class="selected">
+                                    <span class="dropdown-cnt dropdown-arrow d-inline-flex p-2 px-3">1
+                                        adult</span>
+                                </div>
+                                <div class="drop-content position-relative">
+                                    <ul class="position-absolute w-100 drop-content-wrap">
+                                        <li class="dropdown-item"><span class="dropdown-cnt d-inline-flex">2
+                                                adult</span></li>
+                                        <li class="dropdown-item"><span class="dropdown-cnt d-inline-flex">3
+                                                adult</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="custom-dropdown1 position-relative">
+                                <div class="selected">
+                                    <span class="dropdown-cnt dropdown-arrow d-inline-flex p-2 px-2 ml-2">Class</span>
+                                </div>
+                                <div class="drop-content position-relative">
+                                    <ul class="position-absolute w-100 drop-content-wrap">
+                                        <li class="dropdown-item"><span class="dropdown-cnt d-inline-flex">Business</span></li>
+                                        <li class="dropdown-item"><span class="dropdown-cnt d-inline-flex">Economy</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane  show active " id="roundTrip3" role="tabpanel" aria-labelledby="roundTrip3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 ">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-wrap">
+                                                    <div class="flight-item-wrap d-flex p-3">
+                                                        <span class="location d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                        <div class="flight-txt">
+                                                            <h5 class="flight-from m-0">Flying from</h5>
+                                                            <p class="leaving-from m-0">Leaving from</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Nearby-Airports10">Direct Flights Only
+                                                    <input type="checkbox" checked="checked"
+                                                        id="Nearby-Airports10" class="nearby-airport-inpt">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6 ">
+                                                <div class="flight-item-wrap d-flex p-3">
+                                                    <span class="send d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Flying to</h5>
+                                                        <p class="leaving-from m-0">Going to</p>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Direct-Flights10">Direct Flights Only
+                                                    <input type="checkbox" checked="checked" id="Direct-Flights10"
+                                                        class="nearby-airport-inpt">
+                                                    <span class="checkmark"></span>
+                                                </label>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-1 p-md-3 pt-3 pt-sm-0">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Departure</h5>
+                                                        <p class="leaving-from m-0">Departure</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-3 justify-content-md-between">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Return</h5>
+                                                        <p class="leaving-from m-0">Return</p>
+                                                    </div>
+                                                    <div class="search d-flex justify-content-center align-items-center ml-auto">
+                                                        <img src="assets/images/search.svg" alt="search" class="img-fluid search-icn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="oneWay3" role="tabpanel" aria-labelledby="oneWay3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 ">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-wrap">
+                                                    <div class="flight-item-wrap d-flex p-3">
+                                                        <span class="location d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                        <div class="flight-txt">
+                                                            <h5 class="flight-from m-0">Flying from</h5>
+                                                            <p class="leaving-from m-0">Leaving from</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Nearby-Airports11">Direct Flights Only
+                                                <input type="checkbox" checked="checked"
+                                                    id="Nearby-Airports11" class="nearby-airport-inpt">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            </div>
+                                            <div class="col-md-6 ">
+                                                <div class="flight-item-wrap d-flex p-3">
+                                                    <span class="send d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Flying to</h5>
+                                                        <p class="leaving-from m-0">Going to</p>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Direct-Flights11">Direct Flights Only
+                                                <input type="checkbox" checked="checked" id="Direct-Flights11"
+                                                    class="nearby-airport-inpt">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-1 p-md-3 pt-3 pt-sm-0">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Departure</h5>
+                                                        <p class="leaving-from m-0">Departure</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-3 justify-content-md-between">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Return</h5>
+                                                        <p class="leaving-from m-0">Return</p>
+                                                    </div>
+                                                    <div class="search d-flex justify-content-center align-items-center ml-auto">
+                                                        <img src="assets/images/search.svg" alt="search" class="img-fluid search-icn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="multiCity3" role="tabpanel" aria-labelledby="multiCity3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 ">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-wrap">
+                                                    <div class="flight-item-wrap d-flex p-3">
+                                                        <span class="location d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                        <div class="flight-txt">
+                                                            <h5 class="flight-from m-0">Flying from</h5>
+                                                            <p class="leaving-from m-0">Leaving from</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Nearby-Airports12">Direct Flights Only
+                                                    <input type="checkbox" checked="checked"
+                                                        id="Nearby-Airports12" class="nearby-airport-inpt">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6 ">
+                                                <div class="flight-item-wrap d-flex p-3">
+                                                    <span class="send d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Flying to</h5>
+                                                        <p class="leaving-from m-0">Going to</p>
+                                                    </div>
+                                                </div>
+                                                <label class="custom-flight-label position-relative" for="Direct-Flights12">Direct Flights Only
+                                                    <input type="checkbox" checked="checked" id="Direct-Flights12"
+                                                        class="nearby-airport-inpt">
+                                                    <span class="checkmark"></span>
+                                                </label>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-1 p-md-3 pt-3 pt-sm-0">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Departure</h5>
+                                                        <p class="leaving-from m-0">Departure</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="flight-item-wrap d-flex p-3 justify-content-md-between">
+                                                    <span class="calendar d-inline-block mr-2 mr-md-3 mt-1"></span>
+                                                    <div class="flight-txt">
+                                                        <h5 class="flight-from m-0">Return</h5>
+                                                        <p class="leaving-from m-0">Return</p>
+                                                    </div>
+                                                    <div class="search d-flex justify-content-center align-items-center ml-auto">
+                                                        <img src="assets/images/search.svg" alt="search" class="img-fluid search-icn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Adventure Section -->
+    <section class="card-section-wrap">
+        <div class="container card-bg-color p-4 p-sm-5">
+            <h2 class="card-main-title">Plan your Next Staycation</h2>
+            <p class="card-main-subtitle">Let’s go on an adventure</p>
+            <ul class="nav nav-pills card-main-wrap mb-4" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link  card-main-link active" id="pills-home-tab" data-toggle="pill" href="#delhi" role="tab" aria-controls="delhi" aria-selected="true">New Delhi</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link card-main-link" id="pills-profile-tab" data-toggle="pill" href="#Mumbai" role="tab" aria-controls="Mumbai" aria-selected="false">Mumbai</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link card-main-link" id="pills-contact-tab" data-toggle="pill" href="#Bangaluru" role="tab" aria-controls="Bangaluru" aria-selected="false">Bangaluru</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="delhi" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 pl-md-0 ">
+                                <div class="main-card-wrap card border-0 mb-4 mb-lg-0">
+                                    <img src="assets/images/card-1.png" class="card-img-top" alt="card">
+                                    <div class="card-body pb-0">
+                                        <div class="card-cnt border-bottom pb-3">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <h6 class="card-title">The grand resort</h6>
+                                                    <p class="card-text">Karineside</p>
+                                                </div>
+                                                <div class="col-md-4 col-12 mt-2 mt-md-0">
+                                                    <label class="card-label-price d-inline-flex justify-content-center flex-column px-2">
+                                                        <span class="d-inline-flex">&#x24;<del>699</del></span>
+                                                        <span class="d-inline-flex">&#x24;548</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-price-wrap d-flex justify-content-between align-items-center">
+                                            <p class="card-price py-3">&#x24;200 total</p>
+                                            <p class="card-rating">4.9 <span class="card-reviews">(12 reviews)</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="main-card-wrap card border-0 mb-4 mb-lg-0">
+                                    <img src="assets/images/card-2.png" class="card-img-top" alt="card">
+                                    <div class="card-body pb-0">
+                                        <div class="card-cnt border-bottom pb-3">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <h6 class="card-title">The grand resort</h6>
+                                                    <p class="card-text">Karineside</p>
+                                                </div>
+                                                <div class="col-md-4 col-12 mt-2 mt-md-0">
+                                                    <label class="card-label-price d-inline-flex justify-content-center flex-column px-2">
+                                                        <span class="d-inline-flex">&#x24;<del>699</del></span>
+                                                        <span class="d-inline-flex">&#x24;548</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-price-wrap d-flex justify-content-between align-items-center">
+                                            <p class="card-price py-3">&#x24;200 total</p>
+                                            <p class="card-rating">4.9 <span class="card-reviews">(12 reviews)</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="main-card-wrap card border-0 mb-4 mb-lg-0">
+                                    <img src="assets/images/card-3.png" class="card-img-top" alt="card">
+                                    <div class="card-body pb-0">
+                                        <div class="card-cnt border-bottom pb-3">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <h6 class="card-title">The grand resort</h6>
+                                                    <p class="card-text">Karineside</p>
+                                                </div>
+                                                <div class="col-md-4 col-12 mt-2 mt-md-0">
+                                                    <label class="card-label-price d-inline-flex justify-content-center flex-column px-2">
+                                                        <span class="d-inline-flex">&#x24;<del>699</del></span>
+                                                        <span class="d-inline-flex">&#x24;548</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-price-wrap d-flex justify-content-between align-items-center">
+                                            <p class="card-price py-3">&#x24;200 total</p>
+                                            <p class="card-rating">4.9 <span class="card-reviews">(12 reviews)</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 pr-0">
+                                <div class="main-card-wrap card border-0 mb-4 mb-lg-0">
+                                    <img src="assets/images/card-4.png" class="card-img-top" alt="card">
+                                    <div class="card-body pb-0">
+                                        <div class="card-cnt border-bottom pb-3">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <h6 class="card-title">The grand resort</h6>
+                                                    <p class="card-text">Karineside</p>
+                                                </div>
+                                                <div class="col-md-4 col-12 mt-2 mt-md-0">
+                                                    <label class="card-label-price d-inline-flex justify-content-center flex-column px-2">
+                                                        <span class="d-inline-flex">&#x24;<del>699</del></span>
+                                                        <span class="d-inline-flex">&#x24;548</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-price-wrap d-flex justify-content-between align-items-center">
+                                            <p class="card-price py-3">&#x24;200 total</p>
+                                            <p class="card-rating">4.9 <span class="card-reviews">(12 reviews)</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-view-btn d-flex justify-content-center pt-2 pt-md-4">
+                            <button type="button" class="view-all px-3 py-2">View all</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Mumbai" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 pl-md-0">
+                                <div class="main-card-wrap card border-0 mb-4 mb-lg-0">
+                                    <img src="assets/images/card-1.png" class="card-img-top" alt="card">
+                                    <div class="card-body pb-0">
+                                        <div class="card-cnt border-bottom pb-3">
+                                            <h5 class="card-title">The grand resort</h5>
+                                            <p class="card-text">Karineside</p>
+                                        </div>
+                                        <div class="card-price-wrap d-flex justify-content-between align-items-center">
+                                            <p class="card-price py-3">&#x24;200 total</p>
+                                            <p class="card-rating">4.9 <span class="card-reviews">(12 reviews)</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="main-card-wrap card border-0 mb-4 mb-lg-0">
+                                    <img src="assets/images/card-2.png" class="card-img-top" alt="card">
+                                    <div class="card-body pb-0">
+                                        <div class="card-cnt border-bottom pb-3">
+                                            <h5 class="card-title">The grand resort</h5>
+                                            <p class="card-text">Karineside</p>
+                                        </div>
+                                        <div class="card-price-wrap d-flex justify-content-between align-items-center">
+                                            <p class="card-price py-3">&#x24;200 total</p>
+                                            <p class="card-rating">4.9 <span class="card-reviews">(12 reviews)</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="main-card-wrap card border-0 mb-4 mb-lg-0">
+                                    <img src="assets/images/card-3.png" class="card-img-top" alt="card">
+                                    <div class="card-body pb-0">
+                                        <div class="card-cnt border-bottom pb-3">
+                                            <h5 class="card-title">The grand resort</h5>
+                                            <p class="card-text">Karineside</p>
+                                        </div>
+                                        <div class="card-price-wrap d-flex justify-content-between align-items-center">
+                                            <p class="card-price py-3">&#x24;200 total</p>
+                                            <p class="card-rating">4.9 <span class="card-reviews">(12 reviews)</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 pr-0">
+                                <div class="main-card-wrap card border-0 mb-4 mb-lg-0">
+                                    <img src="assets/images/card-4.png" class="card-img-top" alt="card">
+                                    <div class="card-body pb-0">
+                                        <div class="card-cnt border-bottom pb-3">
+                                            <h5 class="card-title">The grand resort</h5>
+                                            <p class="card-text">Karineside</p>
+                                        </div>
+                                        <div class="card-price-wrap d-flex justify-content-between align-items-center">
+                                            <p class="card-price py-3">&#x24;200 total</p>
+                                            <p class="card-rating">4.9 <span class="card-reviews">(12 reviews)</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Bangaluru" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 pl-md-0">
+                                <div class="main-card-wrap card border-0 mb-4 mb-lg-0">
+                                    <img src="assets/images/card-1.png" class="card-img-top" alt="card">
+                                    <div class="card-body pb-0">
+                                        <div class="card-cnt border-bottom pb-3">
+                                            <h5 class="card-title">The grand resort</h5>
+                                            <p class="card-text">Karineside</p>
+                                        </div>
+                                        <div class="card-price-wrap d-flex justify-content-between align-items-center">
+                                            <p class="card-price py-3">&#x24;200 total</p>
+                                            <p class="card-rating">4.9 <span class="card-reviews">(12 reviews)</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="main-card-wrap card border-0 mb-4 mb-lg-0">
+                                    <img src="assets/images/card-2.png" class="card-img-top" alt="card">
+                                    <div class="card-body pb-0">
+                                        <div class="card-cnt border-bottom pb-3">
+                                            <h5 class="card-title">The grand resort</h5>
+                                            <p class="card-text">Karineside</p>
+                                        </div>
+                                        <div class="card-price-wrap d-flex justify-content-between align-items-center">
+                                            <p class="card-price py-3">&#x24;200 total</p>
+                                            <p class="card-rating">4.9 <span class="card-reviews">(12 reviews)</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="main-card-wrap card border-0 mb-4 mb-lg-0">
+                                    <img src="assets/images/card-3.png" class="card-img-top" alt="card">
+                                    <div class="card-body pb-0">
+                                        <div class="card-cnt border-bottom pb-3">
+                                            <h5 class="card-title">The grand resort</h5>
+                                            <p class="card-text">Karineside</p>
+                                        </div>
+                                        <div class="card-price-wrap d-flex justify-content-between align-items-center">
+                                            <p class="card-price py-3">&#x24;200 total</p>
+                                            <p class="card-rating">4.9 <span class="card-reviews">(12 reviews)</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 pr-0">
+                                <div class="main-card-wrap card border-0 mb-4 mb-lg-0">
+                                    <img src="assets/images/card-4.png" class="card-img-top" alt="card">
+                                    <div class="card-body pb-0">
+                                        <div class="card-cnt border-bottom pb-3">
+                                            <h5 class="card-title">The grand resort</h5>
+                                            <p class="card-text">Karineside</p>
+                                        </div>
+                                        <div class="card-price-wrap d-flex justify-content-between align-items-center">
+                                            <p class="card-price py-3">&#x24;200 total</p>
+                                            <p class="card-rating">4.9 <span class="card-reviews">(12 reviews)</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Best flight Deal -->
+            <section class="best-flight-deal mt-5">
+                <div class="container">
+                    <h2 class="best-flight-deal-title mb-4 text-center">Best Flight Deals from New Delhi</h2>
+                    <div class="row">
+                        <div class="col-md-6 mb-4 mb-lg-0">
+                            <div class="best-flight-wrp">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="best-flight-img h-100">
+                                            <img src="assets/images/image-flight1.png" alt="flight1" class="img-fluid h-100 w-100">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 pl-md-0">
+                                        <div class="best-flight-wrap-box p-3 m-lg-0 m-3">
+                                            <div class="best-flight-cnt  text-center py-3">
+                                                <img src="assets/images/emirates.png" alt="emirates" class="img-fluid" width="68">
+                                            </div>
+                                            <div class="row pt-2">
+                                                <div class="col-lg-4 col-md-12 pl-md-0">
+                                                    <div class="best-flight-travel text-center text-lg-left">
+                                                        <h6 class="best-flight-from m-0 text-center">AKL</h6>
+                                                        <span class="d-inline-flex best-flight-datetime text-center text-lg-left">4 Feb, 6:45 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12 m-auto p-0">
+                                                    <span class="best-flight-line d-block"></span>
+                                                    <p class="best-flight-status text-center text-lg-left pt-1 m-0">nonstop</p>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12 pl-md-0">
+                                                    <div class="best-flight-travel ">
+                                                        <h6 class="best-flight-from m-0 text-center text-lg-left">SGN</h6>
+                                                        <span class="d-inline-flex best-flight-datetime text-center text-lg-left w-100">9 Feb, 6:45 AM</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="best-flight-cnt text-center py-3 mt-2">
+                                                <img src="assets/images/air-india.png " alt="air-india " class="img-fluid " width="68 ">
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-12 pl-md-0">
+                                                    <div class="best-flight-travel text-center text-lg-left pt-2">
+                                                        <h6 class="best-flight-from m-0 text-center">AKL</h6>
+                                                        <span class="d-inline-flex best-flight-datetime text-center text-lg-left">4 Feb, 6:45 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12 m-auto p-0">
+                                                    <span class="best-flight-line d-block"></span>
+                                                    <p class="best-flight-status text-center text-lg-left pt-1 m-0">nonstop</p>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12 pl-md-0">
+                                                    <div class="best-flight-travel ">
+                                                        <h6 class="best-flight-from m-0 text-center text-lg-left">SGN</h6>
+                                                        <span class="d-inline-flex best-flight-datetime text-center text-lg-left w-100">9 Feb, 6:45 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 best-flight-btn-wrap pt-3 d-flex justify-content-center align-items-center pl-0">
+                                                    <div class="container-fluid">
+                                                        <div class="row justify-content-center align-content-center">
+                                                            <div class="col-lg-6 col-md-12 col-12 pl-lg-0">
+                                                                <h4 class="best-flight-btntxt text-center text-lg-left">Starting from</h4>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-12 col-12">
+                                                                <div class="best-flight-price-wrap text-center text-lg-right">
+                                                                    <button type="button" class="best-flight-price px-4 p-1 bg-transparent ml-0 pl-lg-4">&#x24;200</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4 mb-lg-0">
+                            <div class="best-flight-wrp">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="best-flight-img h-100">
+                                            <img src="assets/images/image-flight2.png" alt="flight2" class="img-fluid h-100 w-100">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 pl-md-0">
+                                        <div class="best-flight-wrap-box p-3 m-lg-0 m-3">
+                                            <div class="best-flight-cnt  text-center py-3">
+                                                <img src="assets/images/emirates.png" alt="emirates" class="img-fluid" width="68">
+                                            </div>
+                                            <div class="row pt-2">
+                                                <div class="col-lg-4 col-md-12 pl-md-0">
+                                                    <div class="best-flight-travel text-center text-lg-left">
+                                                        <h6 class="best-flight-from m-0 text-center">AKL</h6>
+                                                        <span class="d-inline-flex best-flight-datetime text-center text-lg-left">4 Feb, 6:45 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12 m-auto p-0">
+                                                    <span class="best-flight-line d-block"></span>
+                                                    <p class="best-flight-status text-center text-lg-left pt-1 m-0">nonstop</p>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12 pl-md-0">
+                                                    <div class="best-flight-travel ">
+                                                        <h6 class="best-flight-from m-0 text-center text-lg-left">SGN</h6>
+                                                        <span class="d-inline-flex best-flight-datetime text-center text-lg-left w-100">9 Feb, 6:45 AM</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="best-flight-cnt text-center py-3 mt-2">
+                                                <img src="assets/images/air-india.png " alt="air-india " class="img-fluid " width="68 ">
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-12 pl-md-0">
+                                                    <div class="best-flight-travel text-center text-lg-left pt-2">
+                                                        <h6 class="best-flight-from m-0 text-center">AKL</h6>
+                                                        <span class="d-inline-flex best-flight-datetime text-center text-lg-left">4 Feb, 6:45 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12 m-auto p-0">
+                                                    <span class="best-flight-line d-block"></span>
+                                                    <p class="best-flight-status text-center text-lg-left pt-1 m-0">nonstop</p>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12 pl-md-0">
+                                                    <div class="best-flight-travel ">
+                                                        <h6 class="best-flight-from m-0 text-center text-lg-left">SGN</h6>
+                                                        <span class="d-inline-flex best-flight-datetime text-center text-lg-left w-100">9 Feb, 6:45 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 best-flight-btn-wrap pt-3 d-flex justify-content-center align-items-center ">
+                                                    <div class="container-fluid">
+                                                        <div class="row align-items-center justify-content-center">
+                                                            <div class="col-lg-6 col-md-12 col-12 pl-lg-0">
+                                                                <h4 class="best-flight-btntxt text-center text-lg-left">Starting from</h4>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-12 col-12">
+                                                                <div class="best-flight-price-wrap text-center text-lg-right">
+                                                                    <button type="button" class="best-flight-price px-4 p-1 bg-transparent ml-0 pl-lg-4">&#x24;200</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4 mt-lg-5">
+                        <div class="col-md-6 mb-4 mb-lg-0">
+                            <div class="best-flight-wrp">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="best-flight-img h-100">
+                                            <img src="assets/images/image-flight3.png" alt="flight3" class="img-fluid h-100 w-100">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 pl-md-0">
+                                        <div class="best-flight-wrap-box p-3 m-lg-0 m-3">
+                                            <div class="best-flight-cnt  text-center py-3">
+                                                <img src="assets/images/emirates.png" alt="emirates" class="img-fluid" width="68">
+                                            </div>
+                                            <div class="row pt-2">
+                                                <div class="col-lg-4 col-md-12 pl-md-0">
+                                                    <div class="best-flight-travel text-center text-lg-left">
+                                                        <h6 class="best-flight-from m-0 text-center">AKL</h6>
+                                                        <span class="d-inline-flex best-flight-datetime text-center text-lg-left">4 Feb, 6:45 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12 m-auto p-0">
+                                                    <span class="best-flight-line d-block"></span>
+                                                    <p class="best-flight-status text-center text-lg-left pt-1 m-0">nonstop</p>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12 pl-md-0">
+                                                    <div class="best-flight-travel ">
+                                                        <h6 class="best-flight-from m-0 text-center text-lg-left">SGN</h6>
+                                                        <span class="d-inline-flex best-flight-datetime text-center text-lg-left w-100">9 Feb, 6:45 AM</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="best-flight-cnt text-center py-3 mt-2">
+                                                <img src="assets/images/air-india.png " alt="air-india " class="img-fluid " width="68 ">
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-12 pl-md-0">
+                                                    <div class="best-flight-travel text-center text-lg-left pt-2">
+                                                        <h6 class="best-flight-from m-0 text-center">AKL</h6>
+                                                        <span class="d-inline-flex best-flight-datetime text-center text-lg-left">4 Feb, 6:45 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12 m-auto p-0">
+                                                    <span class="best-flight-line d-block"></span>
+                                                    <p class="best-flight-status text-center text-lg-left pt-1 m-0">nonstop</p>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12 pl-md-0">
+                                                    <div class="best-flight-travel ">
+                                                        <h6 class="best-flight-from m-0 text-center text-lg-left">SGN</h6>
+                                                        <span class="d-inline-flex best-flight-datetime text-center text-lg-left w-100">9 Feb, 6:45 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 best-flight-btn-wrap pt-3 d-flex justify-content-center align-items-center ">
+                                                    <div class="container-fluid">
+                                                        <div class="row justify-content-center align-items-center">
+                                                            <div class="col-lg-6 col-md-12 col-12 pl-lg-0">
+                                                                <h4 class="best-flight-btntxt text-center text-lg-left">Starting from</h4>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-12 col-12">
+                                                                <div class="best-flight-price-wrap text-center text-lg-right">
+                                                                    <button type="button" class="best-flight-price px-4 p-1 bg-transparent ml-0 pl-lg-4">&#x24;200</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4 mb-lg-0">
+                            <div class="best-flight-wrp">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="best-flight-img h-100">
+                                            <img src="assets/images/image-flight4.png" alt="flight4" class="img-fluid h-100 w-100">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 pl-md-0">
+                                        <div class="best-flight-wrap-box p-3 m-lg-0 m-3">
+                                            <div class="best-flight-cnt  text-center py-3">
+                                                <img src="assets/images/emirates.png" alt="emirates" class="img-fluid" width="68">
+                                            </div>
+                                            <div class="row pt-2">
+                                                <div class="col-lg-4 col-md-12 pl-md-0">
+                                                    <div class="best-flight-travel text-center text-lg-left">
+                                                        <h6 class="best-flight-from m-0 text-center">AKL</h6>
+                                                        <span class="d-inline-flex best-flight-datetime text-center text-lg-left">4 Feb, 6:45 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12 m-auto p-0 ">
+                                                        <span class="best-flight-line d-block"></span>
+                                                        <p class="best-flight-status text-center text-lg-left pt-1 m-0">nonstop</p>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12 pl-md-0">
+                                                    <div class="best-flight-travel ">
+                                                        <h6 class="best-flight-from m-0 text-center text-lg-left">SGN</h6>
+                                                        <span class="d-inline-flex best-flight-datetime text-center text-lg-left w-100">9 Feb, 6:45 AM</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="best-flight-cnt text-center py-3 mt-2">
+                                                <img src="assets/images/air-india.png " alt="air-india " class="img-fluid " width="68 ">
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-12 pl-md-0">
+                                                    <div class="best-flight-travel text-center text-lg-left pt-2">
+                                                        <h6 class="best-flight-from m-0 text-center">AKL</h6>
+                                                        <span class="d-inline-flex best-flight-datetime text-center text-lg-left">4 Feb, 6:45 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12 m-auto p-0">
+                                                    <span class="best-flight-line d-block"></span>
+                                                    <p class="best-flight-status text-center text-lg-left pt-1 m-0">nonstop</p>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12 pl-md-0">
+                                                    <div class="best-flight-travel ">
+                                                        <h6 class="best-flight-from m-0 text-center text-lg-left">SGN</h6>
+                                                        <span class="d-inline-flex best-flight-datetime text-center text-lg-left w-100">9 Feb, 6:45 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 best-flight-btn-wrap pt-3 d-flex justify-content-center align-items-center ">
+                                                    <div class="container-fluid">
+                                                        <div class="row justify-content-center align-items-center">
+                                                            <div class="col-lg-6 col-md-12 col-12 pl-lg-0">
+                                                                <h4 class="best-flight-btntxt text-center text-lg-left">Starting from</h4>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-12 col-12">
+                                                                <div class="best-flight-price-wrap text-center text-lg-right">
+                                                                    <button type="button" class="best-flight-price px-4 p-1 bg-transparent ml-0 pl-lg-4">&#x24;200</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 card-view-btn d-flex justify-content-center pt-2 pt-md-4">
+                            <button type="button" class="view-all px-3 py-2 d-inline-flex align-items-center"><span class="d-inline-flex mr-2"><img src="assets/images/loading.png" alt="loading" class="img-fluid" width="13"></span>Show more</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--  -->
+        </div>
+    </section>
+
+    <!-- feature -->
+    <section class="main-feature ">
+        <div class="container main-feature-bg p-2 p-sm-5 ">
+            <div class="row ">
+                <div class="col-md-4 ">
+                    <div class="feature-cnt-wrap text-center ">
+                        <div class="feature-img-wrp text-center pb-3 ">
+                            <img src="assets/images/Shape.png " alt="shape " class="img-fluid ">
+                        </div>
+                        <h4 class="feature-title py-2 ">Ready when you are</h4>
+                        <p class="feature-subtxt ">See where you can travel to right now and find the best deals across thousands of flights, hotels and car hire options</p>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="feature-cnt-wrap text-center ">
+                        <div class="feature-img-wrp text-center pb-3 ">
+                            <img src="assets/images/Shape2.png " alt="shape " class="img-fluid ">
+                        </div>
+                        <h4 class="feature-title py-2 ">Plan with Confidence</h4>
+                        <p class="feature-subtxt ">Stay one step ahead with the latest travel updates, free hotel and car hire cancellation and COVID-19 travel insurance.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="feature-cnt-wrap text-center ">
+                        <div class="feature-img-wrp text-center pb-3 ">
+                            <img src="assets/images/Shape3.png " alt="shape " class="img-fluid ">
+                        </div>
+                        <h4 class="feature-title py-2 ">Keep it Simple</h4>
+                        <p class="feature-subtxt text-center ">No hidden fees. No hidden charges. No funny business. With us, you’ll always know exactly where your money goes. So you can relax before your trip even begins.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Perfect Trip -->
+    <section class="perfect-trip ">
+        <div class="container ">
+            <div class="perfect-trip-wrp ">
+                <div class="perfect-trip-main d-flex justify-content-between align-items-center ">
+                    <h2 class="perfect-wrap-title m-0 ">Plan your perfect trip</h2>
+                    <div class="arrows-wrp ">
+                        <button type="button" class="perfect-btn-left border-0 bg-transparent"><img src="assets/images/left-arrow.svg " alt="left-arrow " class="img-fluid arrow-left "></button>
+                        <button type="button " class="perfect-btn-right ml-3 "><img src="assets/images/left-arrow.svg " alt="left-arrow " class="img-fluid arrow-right "></button>
+                    </div>
+                </div>
+                <p class="perfect-subtitle ">A lot of amazing experiences</p>
+                <div class="row ">
+                    <div class="col-lg-3 col-md-6 ">
+                        <div class="perfect-img-wrap mb-4 mb-md-0 ">
+                            <img src="assets/images/mumbai-img.png " alt="mumbai " class="img-fluid ">
+                            <div class="perfect-img-main d-flex justify-content-between ">
+                                <div class="perfect-links-wrp pt-3 w-100 ">
+                                    <h6 class="perfect-link-title ">Mumbai</h6>
+                                    <div class="perfect-links d-flex justify-content-between ">
+                                        <a href="# " class="text-decoration-none d-inline-flex pt-3 w-100 ">Flights</a>
+                                        <img src="assets/images/arrow-right.svg " alt="arrow-right " class="img-fluid ml-auto ">
+                                    </div>
+                                    <div class="perfect-links d-flex justify-content-between ">
+                                        <a href="# " class="text-decoration-none d-inline-flex pt-3 w-100 ">Hotels</a>
+                                        <img src="assets/images/arrow-right.svg " alt="arrow-right " class="img-fluid ml-auto ">
+                                    </div>
+                                    <div class="perfect-links d-flex justify-content-between ">
+                                        <a href="# " class="text-decoration-none d-inline-flex pt-3 w-100 ">Car Rental</a>
+                                        <img src="assets/images/arrow-right.svg " alt="arrow-right " class="img-fluid ml-auto ">
+                                    </div>
+                                </div>
+                                <div class="perfect-img-arrows pt-3 ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 ">
+                        <div class="perfect-img-wrap mb-4 mb-md-0 ">
+                            <img src="assets/images/Bangaluru.png " alt="Bangaluru " class="img-fluid ">
+                            <div class="perfect-img-main d-flex justify-content-between ">
+                                <div class="perfect-links-wrp pt-3 w-100 ">
+                                    <h6 class="perfect-link-title ">Bangaluru</h6>
+                                    <div class="perfect-links d-flex justify-content-between ">
+                                        <a href="# " class="text-decoration-none d-inline-flex pt-3 w-100 ">Flights</a>
+                                        <img src="assets/images/arrow-right.svg " alt="arrow-right " class="img-fluid ml-auto ">
+                                    </div>
+                                    <div class="perfect-links d-flex justify-content-between ">
+                                        <a href="# " class="text-decoration-none d-inline-flex pt-3 w-100 ">Hotels</a>
+                                        <img src="assets/images/arrow-right.svg " alt="arrow-right " class="img-fluid ml-auto ">
+                                    </div>
+                                    <div class="perfect-links d-flex justify-content-between ">
+                                        <a href="# " class="text-decoration-none d-inline-flex pt-3 w-100 ">Car Rental</a>
+                                        <img src="assets/images/arrow-right.svg " alt="arrow-right " class="img-fluid ml-auto ">
+                                    </div>
+                                </div>
+                                <div class="perfect-img-arrows pt-3 ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 ">
+                        <div class="perfect-img-wrap mb-4 mb-md-0 ">
+                            <img src="assets/images/Pune.png " alt="Pune " class="img-fluid ">
+                            <div class="perfect-img-main d-flex justify-content-between ">
+                                <div class="perfect-links-wrp pt-3 w-100 ">
+                                    <h6 class="perfect-link-title ">Pune</h6>
+                                    <div class="perfect-links d-flex justify-content-between ">
+                                        <a href="# " class="text-decoration-none d-inline-flex pt-3 w-100 ">Flights</a>
+                                        <img src="assets/images/arrow-right.svg " alt="arrow-right " class="img-fluid ml-auto ">
+                                    </div>
+                                    <div class="perfect-links d-flex justify-content-between ">
+                                        <a href="# " class="text-decoration-none d-inline-flex pt-3 w-100 ">Hotels</a>
+                                        <img src="assets/images/arrow-right.svg " alt="arrow-right " class="img-fluid ml-auto ">
+                                    </div>
+                                    <div class="perfect-links d-flex justify-content-between ">
+                                        <a href="# " class="text-decoration-none d-inline-flex pt-3 w-100 ">Car Rental</a>
+                                        <img src="assets/images/arrow-right.svg " alt="arrow-right " class="img-fluid ml-auto ">
+                                    </div>
+                                </div>
+                                <div class="perfect-img-arrows pt-3 ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 ">
+                        <div class="perfect-img-wrap mb-4 mb-md-0 ">
+                            <img src="assets/images/Tamil-Nadu.png " alt="Tamil-Nadu " class="img-fluid ">
+                            <div class="perfect-img-main d-flex justify-content-between ">
+                                <div class="perfect-links-wrp pt-3 w-100 ">
+                                    <h6 class="perfect-link-title ">Tamil Nadu</h6>
+                                    <div class="perfect-links d-flex justify-content-between ">
+                                        <a href="# " class="text-decoration-none d-inline-flex pt-3 w-100 ">Flights</a>
+                                        <img src="assets/images/arrow-right.svg " alt="arrow-right " class="img-fluid ml-auto ">
+                                    </div>
+                                    <div class="perfect-links d-flex justify-content-between ">
+                                        <a href="# " class="text-decoration-none d-inline-flex pt-3 w-100 ">Hotels</a>
+                                        <img src="assets/images/arrow-right.svg " alt="arrow-right " class="img-fluid ml-auto ">
+                                    </div>
+                                    <div class="perfect-links d-flex justify-content-between ">
+                                        <a href="# " class="text-decoration-none d-inline-flex pt-3 w-100 ">Car Rental</a>
+                                        <img src="assets/images/arrow-right.svg " alt="arrow-right " class="img-fluid ml-auto ">
+                                    </div>
+                                </div>
+                                <div class="perfect-img-arrows pt-3 ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="main-footer ">
+        <div class="container mt-5 ">
+            <div class="row ">
+                <div class="col-12 col-md-7 ">
+                    <div class="row ">
+                        <div class="col-12 col-md-6 col-xl-5 ">
+                            <a class="logo-footer d-inline-flex " href="# ">
+                                <img class="img-fluid " src="assets/images/footer-logo.png " alt="footer logo " width="98 ">
+                            </a>
+                            <p class="footer-desc pt-0 pt-md-3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod Bibendum laoreet. Proin</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-5 ">
+                            <h5 class="footer-heading ">Our Partner</h5>
+                            <p class="footer-desc pt-0 pt-md-3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod Bibendum laoreet. Proin</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 ">
+                    <div class="row ">
+                        <div class="col-12 col-md-4 ">
+                            <div class="footer-cnt-wrap mb-3 mb-sm-0 ">
+                                <h5 class="footer-heading ">About Us</h5>
+                                <a class="footer-links pt-0 pt-md-3 text-decoration-none d-inline-flex " href="# ">Project</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-xl-4 mb-3 mb-sm-0 ">
+                            <div class="footer-cnt-wrap ">
+                                <h5 class="footer-heading ">Cities</h5>
+                                <a class="footer-links pt-0 pt-md-3 text-decoration-none d-inline-flex " href="# ">Press</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-4 col-md-5 mb-3 mb-sm-0 ">
+                            <div class="footer-content  text-left text-md-center">
+                                <h5 class="footer-heading ">Contact Us</h5>
+                                <a class="footer-links pt-0 pt-md-3 text-decoration-none d-inline-flex " href="# ">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="copywrite-text py-3 py-sm-4 m-0 text-center text-md-left ">Copyright © 2021 UI8 LLC. All rights reserved</p>
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js "></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
+    <script src="assets/js/script.js "></script>
+
+
+</body>
+
+</html>

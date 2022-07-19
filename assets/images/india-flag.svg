@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="india-svgrepo-com" transform="translate(0 -0.001)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="11.999" cy="11.999" r="11.999" transform="translate(0.001 0.002)" fill="#fff"/>
+    <path id="Path_1" data-name="Path 1" d="M321.612,157.873h-7.394a33.179,33.179,0,0,1,.006,7.954h7.4a12.011,12.011,0,0,0-.016-7.954Z" transform="translate(-298.297 -149.873)" fill="#efecec"/>
+    <path id="Path_2" data-name="Path 2" d="M260.948,8.922h7.393l0-.01A12.007,12.007,0,0,0,258.105.972C259.942,1.979,260.479,5.169,260.948,8.922Z" transform="translate(-245.028 -0.922)" fill="#e97e24"/>
+    <path id="Path_3" data-name="Path 3" d="M258.113,322.865a12.008,12.008,0,0,0,10.241-7.963c0-.012.007-.023.012-.034h-7.4C260.5,318.641,259.957,321.854,258.113,322.865Z" transform="translate(-245.035 -298.914)" fill="#258f44"/>
+    <path id="Path_4" data-name="Path 4" d="M0,161.873a11.982,11.982,0,0,0,.67,3.953H16.544a33.181,33.181,0,0,0-.006-7.954H.686A11.975,11.975,0,0,0,0,161.873Z" transform="translate(0 -149.872)" fill="#efefef"/>
+    <path id="Path_5" data-name="Path 5" d="M13.537,7.99l0,.01H29.386c-.47-3.753-1.624-6.943-3.461-7.95C25.57.019,25.21,0,24.847,0A12,12,0,0,0,13.537,7.99Z" transform="translate(-12.847)" fill="#ea8634"/>
+    <path id="Path_6" data-name="Path 6" d="M29.094,314.867H13.219l.012.034a12,12,0,0,0,11.318,8.012c.363,0,.723-.018,1.078-.05C27.471,321.853,28.628,318.64,29.094,314.867Z" transform="translate(-12.549 -298.913)" fill="#359846"/>
+  </g>
+</svg>
